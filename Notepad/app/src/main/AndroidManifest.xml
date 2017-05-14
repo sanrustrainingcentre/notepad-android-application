@@ -2,6 +2,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.sanrus.notepad">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <supports-screens android:smallScreens="false"/>
+
+    <!-- Not required to enter sdk level in here, but will do in app/build.gradle file  -->
+    <!-- <uses-sdk android:minSdkVersion="15" android:maxSdkVersion="25"/> -->
+
     <application
         android:name=".NotepadApplication"
         android:allowBackup="true"
